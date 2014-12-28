@@ -1,0 +1,23 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/jquery.mCustomScrollbar.css')
+		script(src='/javascripts/dropzone.js')
+		script(src='/javascripts/jquery.min.js')
+		script(src='/javascripts/jquery.mCustomScrollbar.concat.min.js')
+		script(src='/javascripts/upload.js')
+	body
+		//div(id='backwrapper')
+			div(id='back')
+		form(action='/', id='upload')
+			div(id='uploadguide', class='dz-message') Drop files or click to upload.
+			div(id='preview', class='content')
+
+		//if(file)
+			if(err)
+				div(class='error')= file.originalname + ' not uploaded.'
+			else
+				a(class='uploaded', href='/upload/' + file.originalname)= file.originalname + ' uploaded.'

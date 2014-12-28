@@ -1,0 +1,69 @@
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+body {
+  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
+  background-image: url("/images/morning_dew.jpg");
+  background-size: cover;
+}
+#upload,
+#backwrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+#backwrapper {
+  -webkit-filter: blur(12px);
+  -moz-filter: blur(12px);
+  -o-filter: blur(12px);
+  -ms-filter: blur(12px);
+  filter: blur(12px);
+}
+#back {
+  background-image: url("/images/morning_dew.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+#upload {
+  text-align: center;
+  vertical-align: middle;
+}
+#uploadguide {
+  color: rgba(24,24,24,0.5);
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 64px);
+  left: 0;
+  width: 100%;
+  font-size: 128px;
+  line-height: 128px;
+}
+#preview {
+  color: rgba(240,240,240,0.6);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  border-top: 1px solid rgba(240,240,240,0.2);
+  overflow-style: panner;
+}
+.dz-preview {
+  color: rgba(240,240,240,0.6);
+  height: 40px;
+  display: inline-block;
+}
+.dz-progress,
+.dz-success-mark,
+.dz-error-mark,
+.dz-error-message {
+  display: none;
+}

@@ -1,0 +1,111 @@
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+body {
+  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
+  background-image: url("/images/morning_dew.jpg");
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+#upload,
+#backwrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+#backwrapper {
+  -webkit-filter: blur(12px);
+  -moz-filter: blur(12px);
+  -o-filter: blur(12px);
+  -ms-filter: blur(12px);
+  filter: blur(12px);
+}
+#back {
+  background-image: url("/images/morning_dew.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+#upload {
+  text-align: center;
+  vertical-align: middle;
+}
+#uploadguide {
+  color: rgba(0,0,0,0.4);
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 64px);
+  left: 0;
+  width: 100%;
+  font-size: 128px;
+  line-height: 128px;
+  text-shadow: 0 0 0 2px rgba(24,24,24,0.5);
+}
+#preview {
+  color: rgba(240,240,240,0.6);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid rgba(240,240,240,0.2);
+  overflow: auto;
+}
+.dz-preview {
+  color: rgba(240,240,240,0.6);
+  height: 40px;
+  padding: 0 5px 0 5px;
+  float: right;
+  display: inline-block;
+  -webkit-transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.dz-preview:hover {
+  background: rgba(240,240,240,0.2);
+}
+.dz-preview:active {
+  background: rgba(240,240,240,0.4);
+}
+.dz-progress,
+.dz-success-mark,
+.dz-error-mark,
+.dz-error-message {
+  display: none;
+}
+.mCSB_dragger_bar {
+  background: rgba(240,240,240,0.6) !important;
+}
+.mCSB_dragger {
+  -webkit-transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.mCSB_scrollTools,
+.mCSB_scrollTools:hover {
+  opacity: 1 !important;
+  filter: "alpha(opacity=100)" !important;
+  -ms-filter: "alpha(opacity=100)" !important;
+}
+.mCSB_scrollTools .mCSB_dragger {
+  opacity: 0 !important;
+  filter: "alpha(opacity=0)" !important;
+  -ms-filter: "alpha(opacity=0)" !important;
+}
+.mCS-autoHide:hover .mCSB_dragger {
+  opacity: 1 !important;
+  filter: "alpha(opacity=100)" !important;
+  -ms-filter: "alpha(opacity=100)" !important;
+}
